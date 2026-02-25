@@ -18,7 +18,10 @@ mortandela?.addEventListener("click", function() {
 
 
 const finalizar = document.getElementById("finalizar") as HTMLButtonElement;
-finalizar.addEventListener('click', function() {
+finalizar?.addEventListener('click', function() {
+    const res = document.getElementById("res") as HTMLElement;
+
+    res.innerHTML = meuPedido.join(", ");
 
     console.log(`Clicou em ${meuPedido.join(", ")}`);
 });

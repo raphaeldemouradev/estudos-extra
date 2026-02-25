@@ -11,7 +11,9 @@ mortandela === null || mortandela === void 0 ? void 0 : mortandela.addEventListe
     meuPedido.push("mortandela");
 });
 var finalizar = document.getElementById("finalizar");
-finalizar.addEventListener('click', function () {
+finalizar === null || finalizar === void 0 ? void 0 : finalizar.addEventListener('click', function () {
+    var res = document.getElementById("res");
+    res.innerHTML = meuPedido.join(", ");
     console.log("Clicou em ".concat(meuPedido.join(", ")));
 });
 var meuPedido = [];
