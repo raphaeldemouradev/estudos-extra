@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typescript e Tailwind</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <header class="bg-orange-500 p-2">
+        <p class="font-bold">Navbar</p>
+    </header>
+    <main class="bg-blue-300 p-2 h-screen">
+        <div>Main</div>
+
+        <section class="bg-white h-[50vh] text-center flex justfy-content items-center">
+            <div class="bg-blue-500 m-auto p-3 rounded">
+                <div>
+                    <button id="pao">Pão</button>
+                    <button id="queijo">Queijo</button>
+                    <button id="mortandela">Mortandela</button>
+                </div>
+                <div>
+                    <button id="finalizar">Finalizar</button>
+                </div>
+            </div>
+            <div>
+                <p id="res"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-green-200 p-2">
+        <p class="font-bold">Footer</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
